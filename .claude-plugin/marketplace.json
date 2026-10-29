@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "felixgirault",
+  "description": "Félix Girault's personal Claude Code skills.",
+  "owner": {
+    "name": "Félix Girault",
+    "url": "https://fglt.fr"
+  },
+  "plugins": [
+    {
+      "name": "fglt",
+      "description": "fglt's skills.",
+      "source": "./"
+    }
+  ]
+}
