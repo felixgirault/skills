@@ -41,6 +41,7 @@ Formatting is the project formatter's job; never hand-tune layout.
 ## Commits
 
 - Short English phrase in the past tense, capitalised, no prefix, no period: "Fixed APCA contrast of simulated colors", "Added album highlights".
+- Its verb is what the commit did to the project, not what the software does: "Added a G shortcut to group the selection", not "Grouped the selection with G".
 - `feature-*` / `fix-*` branches merged through PRs.
 
 ## TypeScript / JavaScript
