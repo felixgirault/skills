@@ -17,6 +17,8 @@ The spec describes what the project does, for agents. It is not user documentati
 
 - Behavior, rules, constraints, edge cases and invariants: what must hold true.
 - Not implementation details the code already shows, history or rationale (those belong in ADRs and commits).
+- Test each line: would it still hold after a rewrite that behaves the same from outside? If not, cut it. Contracts others rely on (URL params, file formats, public API) stay.
+- Read the code to learn the behavior, but write from what users and callers observe, not following the code's structure.
 
 ## How
 
