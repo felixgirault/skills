@@ -26,12 +26,5 @@ Two hard stops: no code before the ADR, or skipping it, is approved; never push 
 
 ## 3. Build
 
-- Small steps, each leaving the project working; one commit per step.
-- Reuse what the codebase already has before writing anything new.
-- If the approach changes, update the ADR in the same commit.
-
-## 4. Check
-
-- Add or update tests where the project has them.
-- Run the project's tests, linter and type checker; fix what breaks.
-- Reread the whole diff and remove anything the feature doesn't need.
+- Delegate to the `feature-builder` agent, giving it the ADR path and the branch.
+- Relay its report: commits, check results, departures from the ADR.
