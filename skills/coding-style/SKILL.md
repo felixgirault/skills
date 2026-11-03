@@ -7,6 +7,11 @@ description: Félix's personal coding style. Use whenever writing, refactoring o
 
 Formatting is the project formatter's job; never hand-tune layout.
 
+## Delegation
+
+- Unless you are the `fglt:builder` agent, never write code yourself: hand every code change to the `fglt:builder` agent with a brief (what to change and why, the files involved) and its branch (`feature-*` or `fix-*`, created from an up-to-date `main` if you are on it), then relay its report.
+- The brief carries the decisions; the builder only implements them.
+
 ## Precedence
 
 1. The language's idiom and the framework's conventions win (e.g. Adonis classes with DI and decorators, Svelte 5 runes, Astro slots).

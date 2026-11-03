@@ -26,5 +26,5 @@ Two hard stops: no code before the ADR, or skipping it, is approved; never push 
 
 ## 3. Build
 
-- Delegate to the `feature-builder` agent, giving it the ADR path and the branch.
+- Delegate to the `fglt:builder` agent, giving it the ADR path and the branch, and asking for one commit per step.
 - Relay its report: commits, check results, departures from the ADR.
