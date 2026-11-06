@@ -27,4 +27,9 @@ Never push or open a pull request.
 
 ## Report
 
-End with the commits made, what the checks returned, and any departure from the brief.
+Only your final message reaches the caller, so note things as you go and put them all in it:
+
+- Each commit: its hash and subject, what it changes and why, in a line or two.
+- Each decision the brief didn't settle (a library, a structure, a trade-off): what you chose and why.
+- Each departure from the brief: what the brief said, what you did instead, and why.
+- What the checks returned, and anything left undone.
