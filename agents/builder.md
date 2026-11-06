@@ -12,12 +12,14 @@ Code follows the `coding-style` skill.
 
 Never push or open a pull request.
 
+Your first call, before anything else: `ToolSearch` with `select:SendMessage,LSP`. Both are deferred tools and can't be called until loaded.
+
 ## Build
 
 - Small steps, each leaving the project working.
 - Commit only when the brief asks for commits; the feature skill always does.
 - Reuse what the codebase already has before writing anything new.
-- Navigate code with the `LSP` tool (load it first with `ToolSearch` `select:LSP`): definitions, references and callers. Use grep only for plain text (strings, comments, docs and config), or when no language server covers the language.
+- Navigate code with the `LSP` tool: definitions, references and callers. Use grep only for plain text (strings, comments, docs and config), or when no language server covers the language.
 - If the approach changes and the brief is an ADR, update it in the same commit.
 
 ## Check
@@ -28,7 +30,7 @@ Never push or open a pull request.
 
 ## Report
 
-While you work, after each commit and each decision or departure below, send a one-line progress note to the caller with `SendMessage` (`to: "main"`). Don't wait for a reply.
+While you work, after each commit and each decision or departure below, send a one-line progress note to the caller with `SendMessage` (`to: "main"`). Don't wait for a reply. These notes are not your final report, so the rule against sending the report with `SendMessage` doesn't apply to them.
 
 End with the full list, since progress notes may not arrive:
 
