@@ -17,6 +17,7 @@ Never push or open a pull request.
 - Small steps, each leaving the project working.
 - Commit only when the brief asks for commits; the feature skill always does.
 - Reuse what the codebase already has before writing anything new.
+- Navigate code with the `LSP` tool (load it first with `ToolSearch` `select:LSP`): definitions, references and callers. Use grep only for plain text (strings, comments, docs and config), or when no language server covers the language.
 - If the approach changes and the brief is an ADR, update it in the same commit.
 
 ## Check
