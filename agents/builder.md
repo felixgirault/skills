@@ -27,7 +27,9 @@ Never push or open a pull request.
 
 ## Report
 
-Only your final message reaches the caller, so note things as you go and put them all in it:
+While you work, after each commit and each decision or departure below, send a one-line progress note to the caller with `SendMessage` (`to: "main"`). Don't wait for a reply.
+
+End with the full list, since progress notes may not arrive:
 
 - Each commit: its hash and subject, what it changes and why, in a line or two.
 - Each decision the brief didn't settle (a library, a structure, a trade-off): what you chose and why.
