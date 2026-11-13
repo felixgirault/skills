@@ -45,8 +45,11 @@ Formatting is the project formatter's job; never hand-tune layout.
 
 ## Commits
 
-- Short English phrase in the past tense, capitalised, no prefix, no period: "Fixed APCA contrast of simulated colors", "Added album highlights".
-- Its verb is what the commit did to the project, not what the software does: "Added a G shortcut to group the selection", not "Grouped the selection with G".
+- Short English phrase, capitalised, no prefix, no period.
+- Pick the tense by who does the verb:
+  - The developer, to the code (add, fix, remove, rename, make, delegate…): past tense. "Fixed APCA contrast of simulated colors", "Added album highlights", "Made the builder navigate code with LSP".
+  - The software, at runtime (announce, ignore, show, offer…): `-ing` form, since it keeps doing it after the commit. "Announcing saved settings, unsaved entries and recordings", "Ignoring URL changes of background tabs", "Offering to record time on issue pages".
+- Never put a runtime verb in the past tense: "Showed the empty line only for an empty chart" reads as if the commit showed it.
 - `feature-*` / `fix-*` branches merged through PRs.
 
 ## TypeScript / JavaScript
