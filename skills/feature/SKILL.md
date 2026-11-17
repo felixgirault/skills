@@ -26,6 +26,6 @@ Two hard stops: no code before the ADR, or skipping it, is approved; never push 
 
 ## 3. Build
 
-- Delegate to the `fglt:builder` agent, giving it the ADR path and the branch, and asking for one commit per step.
+- Delegate to the `fglt:builder` agent, giving it the ADR path and the branch, and asking for one commit per step, the last one removing the feature from the roadmap if it is listed there (`roadmap` skill).
 - Relay its report: commits, decisions, departures from the ADR, check results.
 - Then give a few short, concrete ways for a human to try the feature by hand: the exact command, URL or input, and what they should see. Cover the main path and one edge case.
