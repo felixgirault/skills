@@ -10,8 +10,8 @@ The spec describes what the project does, for agents. It is not user documentati
 ## Where
 
 - Use the existing spec if the project has one.
-- Otherwise create `doc/spec.md`.
-- If it grows past about 200 lines, split it into `doc/spec/<topic>.md` files and keep `doc/spec.md` as a short index linking them.
+- Otherwise create `docs/spec.md`.
+- If it grows past about 200 lines, split it into `docs/spec/<topic>.md` files and keep `docs/spec.md` as a short index linking them.
 
 ## What
 

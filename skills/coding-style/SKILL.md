@@ -9,13 +9,13 @@ Formatting is the project formatter's job; never hand-tune layout.
 
 ## Delegation
 
-- Unless you are the `fglt:builder` agent, never write code yourself: hand every code change to the `fglt:builder` agent with a brief (what to change and why, the files involved) and its branch (`feature-*` or `fix-*`, created from an up-to-date `main` if you are on it), then relay its report.
+- Unless you are the `fglt:builder` agent, never write code yourself: hand every code change to the `fglt:builder` agent with a brief (what to change and why, the files involved) and its branch (`feature-*` or `fix-*`, created from an up-to-date `main` if you are on it), asking it to update the spec in the commit that changes the behavior (`spec` skill), then relay its report.
 - The brief carries the decisions; the builder only implements them.
 
 ## Precedence
 
 1. The language's idiom and the framework's conventions win (e.g. Adonis classes with DI and decorators, Svelte 5 runes, Astro slots).
-2. Existing repo patterns win next (e.g. `db` keeps React, Redux, sagas, lodash).
+2. Existing repo patterns win next (e.g. a repo already on Redux and lodash keeps them).
 3. Everywhere else, apply the rules below.
 
 ## Code shape
