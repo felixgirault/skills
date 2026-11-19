@@ -45,11 +45,21 @@ Formatting is the project formatter's job; never hand-tune layout.
 
 ## Commits
 
-- Short English phrase, capitalised, no prefix, no period.
+- Subject: what changed, and why if it fits. A short English phrase, at most 72 characters, capitalised, no prefix, no period.
 - Pick the tense by who does the verb:
   - The developer, to the code (add, fix, remove, rename, make, delegate…): past tense. "Fixed APCA contrast of simulated colors", "Added album highlights", "Made the builder navigate code with LSP".
   - The software, at runtime (announce, ignore, show, offer…): `-ing` form, since it keeps doing it after the commit. "Announcing saved settings, unsaved entries and recordings", "Ignoring URL changes of background tabs", "Offering to record time on issue pages".
 - Never put a runtime verb in the past tense: "Showed the empty line only for an empty chart" reads as if the commit showed it.
+- Body only when the subject isn't enough: what the diff doesn't show (behavior, edge cases, ADR or issue, what the tests cover), wrapped at 72, after a blank line (a second `-m` or a heredoc), never on the subject line.
+  ```
+  Made lanes meet only through buses
+
+  A wire between two lanes that isn't to or from a bus is refused while
+  dragged and on release. One already in a file is drawn in the warning
+  color.
+
+  ADR 0242. Tested on the wires a lane may make.
+  ```
 - `feature-*` / `fix-*` branches merged through PRs.
 
 ## TypeScript / JavaScript
