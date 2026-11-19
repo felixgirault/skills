@@ -9,7 +9,7 @@ The roadmap lists what the project plans to do. It is not a changelog or a spec.
 
 ## Where
 
-- Use the existing roadmap if the project has one (`ROADMAP.md`, `doc/roadmap.md`…).
+- Use the existing roadmap if the project has one (`ROADMAP.md`, `docs/roadmap.md`…).
 - Otherwise create `ROADMAP.md`.
 
 ## What

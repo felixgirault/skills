@@ -17,7 +17,7 @@ Your first call, before anything else: `ToolSearch` with `select:SendMessage,LSP
 ## Build
 
 - Small steps, each leaving the project working.
-- Commit only when the brief asks for commits; the feature skill always does.
+- Commit each step unless the brief says not to.
 - Reuse what the codebase already has before writing anything new.
 - Navigate code with the `LSP` tool: definitions, references and callers. Use grep only for plain text (strings, comments, docs and config), or when no language server covers the language.
 - If the approach changes and the brief is an ADR, update it in the same commit.
