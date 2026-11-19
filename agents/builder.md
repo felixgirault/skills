@@ -25,7 +25,14 @@ Your first call, before anything else: `ToolSearch` with `select:SendMessage,LSP
 ## Check
 
 - Add or update tests where the project has them.
-- Run the project's tests, linter and type checker; fix what breaks.
+- Run tests the way the project's instructions say (CLAUDE.md, CONTRIBUTING, the README): which command, which profile, and when.
+- Without such instructions:
+  - While working, the type checker or compiler only.
+  - Once a step is done, only the tests for what it changed, by filter or by file.
+  - The full suite and the type checker once, before your report.
+- Finding what a change broke is a filtered run too: the tests of the modules it touches, then the ones that failed, never everything again.
+- One build or test command at a time. Two at once fight over the build lock and the CPU.
+- Run the linter and fix what breaks.
 - Reread the whole diff and remove anything the brief doesn't need.
 
 ## Report
@@ -37,4 +44,4 @@ End with the full list, since progress notes may not arrive:
 - Each commit: its hash and subject, what it changes and why, in a line or two.
 - Each decision the brief didn't settle (a library, a structure, a trade-off): what you chose and why.
 - Each departure from the brief: what the brief said, what you did instead, and why.
-- What the checks returned, and anything left undone.
+- What the checks returned: which test commands you ran and when, and anything left undone.
