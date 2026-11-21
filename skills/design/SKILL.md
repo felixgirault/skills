@@ -11,7 +11,7 @@ Design ends with an approved decision (the ADR, in the `feature` skill) and the 
 
 - A discussion is not a go. Until the decision is approved, write no code and run no build. Only edit design docs: the ADR, research notes and the roadmap. A question is a question, not a request to change something.
 - When the user asks for options or your take, give them and stop; don't pick one and build it. Ask before writing anything long.
-- Check every claim against the code, the source, the docs or a measurement. A number from memory is a guess: check it or label it. Say what you did not check, and offer to check it. When told to check, check everything, not a sample.
+- Check every claim against the code, the source, the docs or a measurement. A fact or number from memory, about another tool too, is a guess: check it or label it "from memory". Say what you did not check, and offer to check it. When told to check, check everything, not a sample.
 - Lose nothing. Write findings, the gist of each exchange and deferred ideas to where the project keeps them: research docs, the ADR, the roadmap. When rewriting a doc, confirm every item survived.
 - The user's scope is the scope. Don't drop cases they listed or swap their terms for yours. Don't add what they didn't ask for. Their examples illustrate; they are not limits. Name what you leave out and why.
 
