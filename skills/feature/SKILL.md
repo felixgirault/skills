@@ -9,11 +9,9 @@ Code follows the `coding-style` skill.
 
 Two hard stops: no code before the ADR, or skipping it, is approved; never push or open a pull request.
 
-## 1. Understand
+## 1. Design
 
-- Restate the feature in one or two sentences.
-- Read the code it touches before proposing anything.
-- Ask only the questions that block the work; pick sensible defaults for the rest and say so.
+- Work the feature out with the `design` skill: scope, research, options, challenges. The ADR below records its decision.
 
 ## 2. Plan
 
