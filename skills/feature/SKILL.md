@@ -12,7 +12,6 @@ Two hard stops: no code before the ADR, or skipping it, is approved; never push 
 ## 1. Design
 
 - Work the feature out with the `design` skill: scope, research, options, challenges. The ADR below records its decision.
-- Read the code it touches before proposing anything; pick sensible defaults for what doesn't block the work and say so.
 
 ## 2. Plan
 
