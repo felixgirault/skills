@@ -39,7 +39,7 @@ Don't use the Agent tool: its agents inherit the working directory, git status a
 
 ```sh
 dir=$(mktemp -d) && cd "$dir" && cat > brief.md   # the ground rules, then the approved brief
-claude -p --restricted --strict-mcp-config --model claude-fable-5-2 --tools "WebSearch,WebFetch" < brief.md > report.md
+claude -p --restricted --strict-mcp-config --model claude-fable-5-2 --tools "WebSearch,WebFetch" --allowedTools "WebSearch,WebFetch" < brief.md > report.md
 ```
 
 - Use Fable unless the user names another model. Without research, use `--tools ""`.
