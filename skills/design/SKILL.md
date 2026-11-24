@@ -22,7 +22,7 @@ Design ends with an approved decision (the ADR, in the `feature` skill) and the 
 - "What's next?": follow the `roadmap` skill, counting the follow-ups of recent decisions as items.
 - An open question ("what would it take", "your take first"): answer it with the cost and what it gains. Start nothing until asked.
 - The user's own idea: build on it, don't replace it. Still weigh it against alternatives, and say plainly if it is weak.
-- When the user wants first principles ("define guidelines first"), don't anchor on what the code does today.
+- When the user wants first principles ("define guidelines first"), don't anchor on what the code does today. For a view from outside the code, follow the `step-back` skill.
 - Ask only the questions that block the design. Number them, make each stand alone, and give your recommended answer, or for a question of fact, what each answer changes. Pick sensible defaults for the rest and say so.
 
 ## 2. Research
