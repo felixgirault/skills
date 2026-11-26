@@ -18,6 +18,7 @@ Design ends with an approved decision (the ADR, in the `feature` skill) and the 
 ## 1. Scope
 
 - Read the project's principles and rules first (spec, design doc, agent instructions), then the past decisions the area touches. Read the git history when a choice looks odd; it may have a reason.
+- A research doc's findings date from when it was written. Before quoting one, read the status of its plan, if it has one, and the decisions since.
 - A terse opener ("new feature: X", an item's name): find the item in the roadmap, ideas, ADRs and code. Restate it in one or two sentences, including what it is not.
 - "What's next?": follow the `roadmap` skill, counting the follow-ups of recent decisions as items.
 - An open question ("what would it take", "your take first"): answer it with the cost and what it gains. Start nothing until asked.
