@@ -20,6 +20,7 @@ Formatting is the project formatter's job; never hand-tune layout.
 
 ## Code shape
 
+- Illegal states unrepresentable: whatever the compiler can catch, it catches, and tests come after, for what types can't say (behavior over time, output, prose). A rule is held by the code, not by a check someone must remember: a type, one enum (a string-literal union in TS) in place of flags that must agree, an exhaustive match with no wildcard, a field with no default, or a private field behind its one writer.
 - Tiny single-purpose functions that compose. If the body is a single expression, return it directly.
 - Braces on every `if`, even one-liners, where the language has braces.
 - A blank line between logical steps inside a function, and before the final `return`.
