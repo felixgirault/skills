@@ -1,6 +1,6 @@
 ---
 name: coding-style
-description: Félix's personal coding style. Use whenever writing, refactoring or reviewing code in any language, so new code reads like his own. Covers code shape, naming, structure, dependencies, debt and commits; formatting is left to each project's formatter.
+description: Félix's personal coding style. Use whenever writing, refactoring or reviewing code in any language, so new code reads like his own. Covers delegation, building and checking, code shape, naming, structure, dependencies, debt and commits; formatting is left to each project's formatter.
 ---
 
 # Coding style
@@ -9,8 +9,30 @@ Formatting is the project formatter's job; never hand-tune layout.
 
 ## Delegation
 
-- Unless you are the `fglt:builder` agent, never write code yourself: hand every code change to the `fglt:builder` agent with a brief (what to change and why, the files involved) and its branch (`feature-*` or `fix-*`, created from an up-to-date `main` if you are on it), asking it to update the spec in the commit that changes the behavior (`spec` skill), then relay its report.
-- The brief carries the decisions; the builder only implements them.
+- Every code change goes on its branch (`feature-*` or `fix-*`, created from an up-to-date `main` if you are on it). A change to behavior updates the spec in the same commit (`spec` skill).
+- Unless you are the `fglt:builder` agent, hand a change that takes several steps or implements an ADR to it, with a brief (what to change and why, the files involved) and its branch; then relay its report. The brief carries the decisions; the builder only implements them.
+- Make a small, contained change yourself, following Build and Check below, then report like the builder does: commits, decisions, debt entries, check results.
+
+## Build
+
+- Small steps, each leaving the project working.
+- Commit each step unless told not to.
+- Reuse what the codebase already has before writing anything new.
+- Navigate code with the `LSP` tool (a deferred tool: load it with `ToolSearch` first): definitions, references and callers. Use grep only for plain text (strings, comments, docs and config), or when no language server covers the language.
+- If the approach changes from an ADR, update the ADR in the same commit.
+
+## Check
+
+- Add or update tests where the project has them.
+- Run tests the way the project's instructions say (CLAUDE.md, CONTRIBUTING, the README): which command, which profile, and when.
+- Without such instructions:
+  - While working, the type checker or compiler only.
+  - Once a step is done, only the tests for what it changed, by filter or by file.
+  - The full suite and the type checker once, before reporting.
+- Finding what a change broke is a filtered run too: the tests of the modules it touches, then the ones that failed, never everything again.
+- One build or test command at a time. Two at once fight over the build lock and the CPU.
+- Run the linter and fix what breaks.
+- Reread the whole diff and remove anything the change doesn't need.
 
 ## Precedence
 
