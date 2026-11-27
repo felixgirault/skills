@@ -44,4 +44,5 @@ End with the full list, since progress notes may not arrive:
 - Each commit: its hash and subject, what it changes and why, in a line or two.
 - Each decision the brief didn't settle (a library, a structure, a trade-off): what you chose and why.
 - Each departure from the brief: what the brief said, what you did instead, and why.
+- Each debt entry you added (`coding-style` skill).
 - What the checks returned: which test commands you ran and when, and anything left undone.

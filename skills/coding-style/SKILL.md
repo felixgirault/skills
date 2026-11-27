@@ -1,6 +1,6 @@
 ---
 name: coding-style
-description: Félix's personal coding style. Use whenever writing, refactoring or reviewing code in any language, so new code reads like his own. Covers code shape, naming, structure, dependencies and commits; formatting is left to each project's formatter.
+description: Félix's personal coding style. Use whenever writing, refactoring or reviewing code in any language, so new code reads like his own. Covers code shape, naming, structure, dependencies, debt and commits; formatting is left to each project's formatter.
 ---
 
 # Coding style
@@ -43,6 +43,18 @@ Formatting is the project formatter's job; never hand-tune layout.
 ## Comments
 
 - `@see <url>` above borrowed algorithms; the formula above dense maths. Little else.
+
+## Debt
+
+- Log in the project's debt doc (`docs/debt.md` unless the repo has one) what you hit on your path and leave unfixed, when the next person would trip on it too: it cost you time, or it can hide a bug. Not an audit: skip what you only noticed in passing.
+  - Surprises: an API, tool or doc that behaves unlike what it says, a README command that fails.
+  - Flakiness: a test, build or command that passed only on retry.
+  - Limits, always: a workaround or shortcut you took, a case left unhandled, a test skipped or that you couldn't write.
+  - Friction that cost you time: a slow build or test, a missing tool, a test or lint already failing before you started.
+- Not debt: what you fixed on the branch (the commit says it), planned work (`roadmap` skill), a deliberate trade-off (the ADR), style you would have written differently.
+- One terse entry per cause, not per symptom: what, where (file, command), how it showed, and the fix if you know it. Update an existing entry rather than adding a twin.
+- Commit an entry with the step that hit it, or on its own when no step did (found while reading or running the checks).
+- Remove an entry in the commit that fixes it.
 
 ## Commits
 
