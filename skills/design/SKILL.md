@@ -40,6 +40,7 @@ Unless the problem is purely internal, research before proposing:
 
 - Give two to four options that really differ, including the simplest one and the one you would build from scratch. For each, say how it works, what it costs and what it breaks or rules out. Then give your pick and why.
 - Show, don't tell: a small before and after (an ASCII sketch, sample input and output, a script) on the hardest real case the project has.
+- Before proposing a plan or a fix to build, trace what the changed code reads underneath, not only the function in front of you: what it calls, and the caches and memos keyed on the state it changes. Name the test, existing or new, that fails if the plan is wrong.
 - When paper can't settle it, propose a cheap prototype on a branch, or trying both ideas, each on its own branch.
 - Take terse answers as decisions ("2", "go with X, but…"). Fold in the constraint they add; what they accept only in part is deferred (6).
 - When challenged, defend your pick with evidence, or concede and say what was wrong with it.
